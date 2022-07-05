@@ -14,7 +14,7 @@ public class QueryProcessorTest {
     public void returnsEmptyStringIfCannotProcessQuery() throws Exception {
         assertThat(queryProcessor.process("test"), is(""));
     }
-
+//
     @Test
     public void knowsAboutShakespeare() throws Exception {
         assertThat(queryProcessor.process("Shakespeare"), containsString("playwright"));
